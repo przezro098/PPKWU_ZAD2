@@ -11,3 +11,9 @@ d) count of combination
 It's realized by "StringAnalyzer" class which is annotated as a "@RestController". 
 "Analyze" method is annotated as a "@RequestMapping" and is called when clinet uses path "/analyze".
 Above method realizes project assmumptions. 
+
+To use please : 
+1) build project using any Java IDE,
+2) make sure that project is running
+3) type in your browser "http://localhost:8080/analyze?input=stringWhichWeWantToAnalyze"
+4) data will be returned as a plain text
