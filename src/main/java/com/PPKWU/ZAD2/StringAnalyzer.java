@@ -17,8 +17,9 @@ public class StringAnalyzer {
 
             if (Character.isLowerCase(entryText.charAt(i)))
                 lowerCase++;
-
-        }
+            if (Character.isDigit(entryText.charAt(i)))
+                digits++;
+            }
         return "Lowercase letters : " + String.valueOf(lowerCase)
                + ", uppercase letters : " + String.valueOf(upperCase)
                + ", digits : " + String.valueOf(digits)
