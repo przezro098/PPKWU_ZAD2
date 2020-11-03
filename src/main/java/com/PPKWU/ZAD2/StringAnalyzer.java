@@ -9,7 +9,21 @@ public class StringAnalyzer {
     @RequestMapping(path = "/analyze")
     public String Analyze(@RequestParam(value = "input", required = false)String entryText)
     {
-        return "";
+        int upperCase=0, lowerCase=0, digits=0, specialChar=0;
+        for (int i = 0; i < entryText.length(); i++) {
+
+            if (Character.isUpperCase(entryText.charAt(i)))
+                upperCase++;
+
+            if (Character.isLowerCase(entryText.charAt(i)))
+                lowerCase++;
+
+        }
+        return "Lowercase letters : " + String.valueOf(lowerCase)
+               + ", uppercase letters : " + String.valueOf(upperCase)
+               + ", digits : " + String.valueOf(digits)
+               + ", special characters : " + String.valueOf(specialChar);
+
     }
 
 }
