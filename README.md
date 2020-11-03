@@ -8,3 +8,6 @@ b) count of uppercase letters,
 c) count of special characters,
 d) count of combination
 
+It's realized by "StringAnalyzer" class which is annotated as a "@RestController". 
+"Analyze" method is annotated as a "@RequestMapping" and is called when clinet uses path "/analyze".
+Above method realizes project assmumptions. 
